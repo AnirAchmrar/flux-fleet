@@ -12,5 +12,5 @@ spec:
   targetNamespace: instavote-staging
   sourceRef:
     kind: GitRepository
-    name: instavote-deploy
+    name: instavote-staging-deploy
 
