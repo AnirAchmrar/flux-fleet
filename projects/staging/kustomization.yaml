@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
   - ../base/facebooc
   - ../base/instavote
+  - ../base/instavote-staging
 patchesStrategicMerge:
   - facebooc-deploy-kustomization.yaml
   - instavote-deploy-kustomization.yaml
+  - instavote-staging-deploy-kustomization.yaml
