@@ -13,3 +13,10 @@ spec:
         name: nginx-ingress
   interval: 24h0m0s
   targetNamespace: flagger-system
+  values:
+    controller:
+      metrics:
+        enabled: true
+      podAnnotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "10254"
